@@ -1,0 +1,163 @@
+﻿@model uStoreMVCconvert.Models.ContactViewModel
+
+
+
+@{
+    ViewBag.Title = "Contact";
+}
+
+
+@*@section styles{
+
+    <style>
+        .input.validation-error {
+            border: solid 2px blue;
+        }
+
+        .field-validation-error {
+            font-weight: bolder;
+            font-size: .8em;
+            color: darkmagenta;
+        }
+
+        #contact-page textarea.form-control {
+            resize: none;
+            height: 160px;
+        }
+    </style>
+}*@
+
+
+
+
+    <div id="heading">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="heading-content">
+                        <h2>Contact Us</h2>
+                        <!--<span>Home / <a href="contact-us.html">Contact Us</a></span>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="product-post">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="heading-section">
+                        <h2>Questions / Comments / Concerns</h2>
+                        <!--<img src="images/under-heading.png" alt="" >-->
+                    </div>
+                </div>
+            </div>
+            <div id="contact-us">
+                <div class="container">
+                    <div class="row">
+                        <div class="product-item col-md-12">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="message-form">
+                                        @using (Html.BeginForm("Contact", "Home", FormMethod.Post, new { @class = "send-message", id = "send-message" }))
+                                        {
+                                            @Html.AntiForgeryToken()
+
+                                            @*<form action="#" method="post" class="send-message">*@
+                                                    <div class="row">
+                                                        <div class="name col-md-4">
+                                                            @*<input type="text" name="name" id="name" placeholder="Name" />*@
+                                                            @Html.TextBoxFor(x => x.Name, new {@id = "name", placeholder = "Name" })
+                                                            @Html.ValidationMessageFor(x => x.Name)
+                                                        </div>
+                                                        <div class="email col-md-4">
+                                                            @*<input type="text" name="email" id="email" placeholder="Email" />*@
+                                                            @Html.TextBoxFor(x => x.Email, new {@id = "email", placeholder = "Email" })
+                                                            @Html.ValidationMessageFor(x => x.Email)
+                                                        </div>
+                                                        <div class="subject col-md-4">
+                                                            @*<input type="text" name="subject" id="subject" placeholder="Subject" />*@
+                                                            @Html.TextBoxFor(x => x.Subject, new {@id = "subject", placeholder = "Subject" })
+                                                            @Html.ValidationMessageFor(x => x.Email)
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="text col-md-12">
+                                                            @*<textarea name="text" placeholder="Message"></textarea>*@
+                                                            @Html.TextAreaFor(x => x.Message, new { @rows = "12", placeholder = "Your Message Here" })
+                                                            @Html.ValidationMessageFor(x => x.Message)
+                                                        </div>
+                                                    </div>
+                                                    <div class="send">
+                                                        <button type="submit">Send</button>
+                                                    </div>                                                
+                                        }
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="info">
+                                        @*<p>Duis at pharetra neque, ut condimentum, purus nisl pretium quam, in pulvinar velit massa id elit. </p>*@
+                                        <ul>
+                                            <li><i class="fa fa-phone"></i>314-555-8876</li>
+                                            <li><i class="fa fa-globe"></i>123 MichaelMcDoesn'tExist Dr, St.Louis, MO, 63139</li>
+                                            <li><i class="fa fa-envelope"></i><a href="#">moreinfo@EALLC.com</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @*<div class="row">
+                <div class="col-md-12">
+                    <div class="heading-section">
+                        <h2>Find Us On Map</h2>*@
+                        <!--<img src="images/under-heading.png" alt="" >-->
+                    @*</div>
+                </div>
+            </div>*@
+
+            @*<div class="row">
+                <div class="col-md-12">
+                    <div id="googleMap" style="height:340px;"></div>
+                </div>
+            </div>*@
+        </div>
+    </div>
+
+
+
+    <script>
+
+		//var map;
+
+        //function initialize()
+        //{
+		//	var map_options = {
+		//	  center: new google.maps.LatLng(16.8496189,96.1288854),
+		//	  zoom: 15,
+		//	  mapTypeId:google.maps.MapTypeId.ROADMAP
+		//	  };
+		//	var map = new google.maps.Map(document.getElementById("googleMap"), map_options);
+        //}
+
+        //google.maps.event.addDomListener(window, 'load', initialize);
+		//google.maps.event.addDomListener(window, "resize", function()
+		//{
+		// 	var center = map.getCenter();
+		// 	google.maps.event.trigger(map, "resize");
+		// 	map.setCenter(center);
+		//});
+    </script>
+
+@*@section scripts{
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <script src="~/Content/Scripts/formValidation.js"></script>
+
+}*@

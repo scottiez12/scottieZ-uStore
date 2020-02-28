@@ -1,0 +1,22 @@
+﻿@model IEnumerable<uStoreMVC.Domain.ProductModel>
+
+@{
+    ViewBag.Title = "Get Products";
+}
+
+<h2>Get Products</h2>
+
+<ul class="codeExample">
+    @foreach (var item in Model)
+    {
+        <li>@item.ProductID , @item.ProductName
+        @item.Price , @item.ProductDescription
+        <a href="@Url.Action("UpdateProduct", "ProductsADO", new {@id = item.ProductID })">[-=-Edit-=-]</a> <br/>
+        <a href="@Url.Action("DeleteProduct", "ProductsADO", new {@id = item.ProductID })" 
+        onclick="return confirm ('Are you sure you want to delete @item.ProductName?')">
+            [-=-Delete-=-]
+        </a>    
+    </li>
+    }
+</ul>
+<br />

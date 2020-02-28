@@ -1,0 +1,77 @@
+﻿@model uStoreMVC.Domain.ProductModel
+
+@{
+    ViewBag.Title = "Update Product";
+}
+
+<h2>Update Product</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    //since we are sending a complete AuthorModel object to this view, we need to account for the AuthorId
+    //which is NOT in the current form fields
+
+    @Html.HiddenFor(m => m.ProductID)
+    @Html.HiddenFor(m => m.ProductStatusID)
+
+    <div class="form-horizontal">
+
+        <div class="form-group">
+            <label class="control-label col-md-2">
+                Product Name
+            </label>
+            <div class="col-md-10">
+                @Html.EditorFor(m => m.ProductName, new { htmlattributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(m => m.ProductName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">
+                Price
+            </label>
+            <div class="col-md-10">
+                @Html.EditorFor(m => m.Price, new { htmlattributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(m => m.Price, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">
+                Product Description
+            </label>
+            <div class="col-md-10">
+                @Html.TextAreaFor(m => m.ProductDescription, new { htmlattributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(m => m.ProductDescription, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">
+                Units In Stock
+            </label>
+            <div class="col-md-10">
+                @Html.EditorFor(m => m.UnitsInStock, new { htmlattributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(m => m.UnitsInStock, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">
+                Product Image
+            </label>
+            <div class="col-md-10">
+                @Html.EditorFor(m => m.ProductImage, new { htmlattributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(m => m.ProductImage, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Update Product" class="btn btn-info" />
+            </div>
+        </div>
+
+    </div>
+
+
+}@*End using*@
+

@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5B2ED27F-D22A-4305-93E6-35DA0FD77212}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>uStoreProjectV2</RootNamespace>
+    <AssemblyName>uStoreProjectV2</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\aboutTop.jpg" />
+    <Content Include="images\acousticProduct2Big.jpg" />
+    <Content Include="images\acousticProduct3Big.jpg" />
+    <Content Include="otherContent\productThumbs\acousticproduct2big %281%29.jpg" />
+    <Content Include="otherContent\productThumbs\acousticproduct3big.jpg" />
+    <Content Include="otherContent\productThumbs\acousticproductbig %281%29.jpg" />
+    <Content Include="images\acousticProductBig.jpg" />
+    <Content Include="images\bassProductBig.jpg" />
+    <Content Include="images\burrsorry.jpg" />
+    <Content Include="images\drumsProduct2Big.jpg" />
+    <Content Include="images\drumsProduct3Big.jpg" />
+    <Content Include="images\drumsProduct4big.jpg" />
+    <Content Include="images\drumsProductBig.jpg" />
+    <Content Include="images\electronicProduct2Big.jpg" />
+    <Content Include="images\electronicProductBig.jpg" />
+    <Content Include="images\elonMusk.jpg" />
+    <Content Include="images\guitarProduct2Big.jpg" />
+    <Content Include="images\guitarProduct3Big.jpg" />
+    <Content Include="images\guitarProduct4Big.jpg" />
+    <Content Include="images\guitarProduct5Big.jpg" />
+    <Content Include="images\guitarProductBig.png" />
+    <Content Include="images\guitarResize.png" />
+    <Content Include="images\guitars.png" />
+    <Content Include="images\scottGuitar.jpg" />
+    <Content Include="images\Steve-Vai-SXM.jpg" />
+    <Content Include="images\stock1.jpg" />
+    <Content Include="images\stock2.jpg" />
+    <Content Include="images\stock3.png" />
+    <Content Include="images\stock4.jpg" />
+    <Content Include="images\stock5.jpg" />
+    <Content Include="images\stock6.jpg" />
+    <Content Include="images\stock7.jpg" />
+    <Content Include="images\turnTableBig1.png" />
+    <Content Include="otherContent\productThumbs\bassproductbig.jpg" />
+    <Content Include="otherContent\productThumbs\drumsproduct2big.jpg" />
+    <Content Include="otherContent\productThumbs\drumsproduct3big.jpg" />
+    <Content Include="otherContent\productThumbs\electronicproduct2big.jpg" />
+    <Content Include="otherContent\productThumbs\electronicproductbig.jpg" />
+    <Content Include="otherContent\productThumbs\guitarproduct2big.jpg" />
+    <Content Include="otherContent\productThumbs\guitarproduct3big.jpg" />
+    <Content Include="otherContent\productThumbs\guitarproduct4big.jpg" />
+    <Content Include="otherContent\productThumbs\guitarproductbig.png" />
+    <Content Include="packages.config" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="_archive\templatemo_417_grill\fonts\fontawesome-webfont.eot" />
+    <Content Include="_archive\templatemo_417_grill\fonts\fontawesome-webfont.ttf" />
+    <Content Include="_archive\templatemo_417_grill\fonts\fontawesome-webfont.woff" />
+    <Content Include="_archive\templatemo_417_grill\fonts\FontAwesome.otf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="about-us.html" />
+    <Content Include="contact-us.html" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\flexslider.css" />
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\templatemo_misc.css" />
+    <Content Include="css\templatemo_style.css" />
+    <Content Include="css\testimonails-slider.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="images\bg-image.jpg" />
+    <Content Include="images\blogpost1.jpg" />
+    <Content Include="images\blogpost2.jpg" />
+    <Content Include="images\blogpost3.jpg" />
+    <Content Include="images\blogpost4.jpg" />
+    <Content Include="images\blogpost5.jpg" />
+    <Content Include="images\blogpost6.jpg" />
+    <Content Include="images\div-line.png" />
+    <Content Include="images\flickr-image1.jpg" />
+    <Content Include="images\flickr-image2.jpg" />
+    <Content Include="images\flickr-image3.jpg" />
+    <Content Include="images\flickr-image4.jpg" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\open-icon.png" />
+    <Content Include="images\product1.jpg" />
+    <Content Include="images\product1_big.jpg" />
+    <Content Include="images\product2.jpg" />
+    <Content Include="images\product2_big.jpg" />
+    <Content Include="images\product3.jpg" />
+    <Content Include="images\product3_big.jpg" />
+    <Content Include="images\product4.jpg" />
+    <Content Include="images\product4_big.jpg" />
+    <Content Include="images\product5.jpg" />
+    <Content Include="images\product5_big.jpg" />
+    <Content Include="images\product6.jpg" />
+    <Content Include="images\product6_big.jpg" />
+    <Content Include="images\product7.jpg" />
+    <Content Include="images\product7_big.jpg" />
+    <Content Include="images\product8.jpg" />
+    <Content Include="images\product8_big.jpg" />
+    <Content Include="images\recent-post1.jpg" />
+    <Content Include="images\recent-post2.jpg" />
+    <Content Include="images\recent-post3.jpg" />
+    <Content Include="images\search-icon.png" />
+    <Content Include="images\single-post.jpg" />
+    <Content Include="images\slide1.jpg" />
+    <Content Include="images\slide2.jpg" />
+    <Content Include="images\slide3.jpg" />
+    <Content Include="images\subscribe-icon.png" />
+    <Content Include="images\timeline1.jpg" />
+    <Content Include="images\timeline2.jpg" />
+    <Content Include="images\timeline3.jpg" />
+    <Content Include="images\timeline4.jpg" />
+    <Content Include="images\timeline5.jpg" />
+    <Content Include="images\timeline6.jpg" />
+    <Content Include="index.html" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\plugins.js" />
+    <Content Include="js\vendor\jquery-1.11.0.min.js" />
+    <Content Include="js\vendor\jquery.gmap3.min.js" />
+    <Content Include="js\vendor\modernizr-2.6.1-respond-1.1.0.min.js" />
+    <Content Include="otherContent\drums.jpg" />
+    <Content Include="otherContent\headGuitars.jpg" />
+    <Content Include="otherContent\iconThumb.jpg" />
+    <Content Include="otherContent\photo-1420161900862-9a86fa1f5c79.jpg" />
+    <Content Include="otherContent\photo-1459749411175-04bf5292ceea.jpg" />
+    <Content Include="otherContent\photo-1460667262436-cf19894f4774.jpg" />
+    <Content Include="otherContent\photo-1499415479124-43c32433a620.jpg" />
+    <Content Include="otherContent\photo-1508854710579-5cecc3a9ff17.jpg" />
+    <Content Include="otherContent\photo-1510279410431-2d0808d69bf8.jpg" />
+    <Content Include="otherContent\photo-1524567248408-cbfd37e65e2d.jpg" />
+    <Content Include="products.html" />
+    <Content Include="single-post.html" />
+    <Content Include="Web.config" />
+    <Content Include="_archive\templatemo_417_grill\about-us.html" />
+    <Content Include="_archive\templatemo_417_grill\contact-us.html" />
+    <Content Include="_archive\templatemo_417_grill\css\bootstrap.css" />
+    <Content Include="_archive\templatemo_417_grill\css\flexslider.css" />
+    <Content Include="_archive\templatemo_417_grill\css\font-awesome.css" />
+    <Content Include="_archive\templatemo_417_grill\css\templatemo_misc.css" />
+    <Content Include="_archive\templatemo_417_grill\css\templatemo_style.css" />
+    <Content Include="_archive\templatemo_417_grill\css\testimonails-slider.css" />
+    <Content Include="_archive\templatemo_417_grill\fonts\fontawesome-webfont.svg" />
+    <Content Include="_archive\templatemo_417_grill\images\author-comment1.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\author-comment2.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\author-comment3.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\author-comment4.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\author1.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\author2.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\author3.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\author4.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\bg-image.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\blogpost1.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\blogpost2.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\blogpost3.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\blogpost4.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\blogpost5.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\blogpost6.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\div-line.png" />
+    <Content Include="_archive\templatemo_417_grill\images\flickr-image1.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\flickr-image2.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\flickr-image3.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\flickr-image4.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\logo.png" />
+    <Content Include="_archive\templatemo_417_grill\images\open-icon.png" />
+    <Content Include="_archive\templatemo_417_grill\images\product1.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\product1_big.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\product2.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\product2_big.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\product3.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\product3_big.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\product4.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\product4_big.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\product5.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\product5_big.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\product6.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\product6_big.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\product7.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\product7_big.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\product8.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\product8_big.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\recent-post1.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\recent-post2.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\recent-post3.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\search-icon.png" />
+    <Content Include="_archive\templatemo_417_grill\images\single-post.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\slide1.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\slide2.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\slide3.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\subscribe-icon.png" />
+    <Content Include="_archive\templatemo_417_grill\images\timeline1.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\timeline2.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\timeline3.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\timeline4.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\timeline5.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\timeline6.jpg" />
+    <Content Include="_archive\templatemo_417_grill\images\under-heading.png" />
+    <Content Include="_archive\templatemo_417_grill\index.html" />
+    <Content Include="_archive\templatemo_417_grill\js\bootstrap.js" />
+    <Content Include="_archive\templatemo_417_grill\js\main.js" />
+    <Content Include="_archive\templatemo_417_grill\js\plugins.js" />
+    <Content Include="_archive\templatemo_417_grill\js\vendor\jquery-1.11.0.min.js" />
+    <Content Include="_archive\templatemo_417_grill\js\vendor\jquery.gmap3.min.js" />
+    <Content Include="_archive\templatemo_417_grill\js\vendor\modernizr-2.6.1-respond-1.1.0.min.js" />
+    <Content Include="_archive\templatemo_417_grill\products.html" />
+    <Content Include="_archive\templatemo_417_grill\single-post.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61608</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:61608/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
